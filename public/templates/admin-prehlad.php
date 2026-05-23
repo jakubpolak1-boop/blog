@@ -25,6 +25,7 @@
                 <th>Nazov</th>
                 <th>Autor</th>
                 <th>Stav</th>
+                <th>Akcie</th>
             </tr>
 
             <?php foreach ($clanky as $jeden_clanok): ?>
@@ -33,6 +34,10 @@
                     <td><?= htmlspecialchars($jeden_clanok['nazov']) ?></td>
                     <td><?= htmlspecialchars($jeden_clanok['autor']) ?></td>
                     <td><?= $jeden_clanok['publikovany'] ? 'Publikovany' : 'Skryty' ?></td>
+                    <td>
+                        <a href="<?= WEB ?>/admin/upravit.php?id=<?= $jeden_clanok['id'] ?>">Upravit</a> |
+                        <a href="<?= WEB ?>/admin/zmazat.php?id=<?= $jeden_clanok['id'] ?>" onclick="return confirm('Naozaj zmazat clanok?')">Zmazat</a>
+                    </td>
                 </tr>
             <?php endforeach; ?>
         </table>

@@ -202,4 +202,33 @@ form button:hover {
     align-items: center;
     gap: 8px;
     margin-top: 15px;
+} 
+.sprava_uspech {
+    background: #dff0d8;
+    color: #2d5a27;
+}
+
+.tabulka {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.tabulka th,
+.tabulka td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+    background: white;
+}
+
+.tabulka th {
+    background: #efefef;
+}
+
+.checkbox_riadok {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 15px;
 }

@@ -24,7 +24,7 @@ CREATE TABLE clanky (
 );
 
 INSERT INTO pouzivatelia (meno, email, heslo) VALUES
-('admin', 'admin@blog.sk', 'zatial_neriešime_login');
+('admin', 'admin@blog.sk', '$2y$12$4uLm2QRRUrXjrKKsFe2WtuD97cGKeuGaaibREbZJYh0D5DTZX2C9y');
 
 INSERT INTO clanky (pouzivatel_id, nazov, perex, obsah, publikovany) VALUES
 (1, 'Prvy clanok', 'Toto je kratky uvod k prvemu clanku.', 'Toto je obsah prveho clanku. Zatial je jednoduchy, ale funguje.', 1),
