@@ -11,7 +11,10 @@
 <header class="horna_cast">
     <div class="obal horna_cast_vnutro">
         <div class="logo_cast">
-            <h1><a href="<?= WEB ?>/index.php"><?= NAZOV_WEBU ?></a></h1>
+            <a href="<?= WEB ?>/index.php" class="logo_link">
+                <img src="<?= WEB ?>/public/assets/img/logo.png" alt="Logo webu" class="logo_img">
+                <span class="logo_text"><?= NAZOV_WEBU ?></span>
+            </a>
         </div>
 
         <nav class="menu">

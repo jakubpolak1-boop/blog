@@ -17,6 +17,9 @@
         <label for="obsah">Obsah</label>
         <textarea name="obsah" id="obsah" rows="10" required><?= htmlspecialchars($clanok['obsah']) ?></textarea>
 
+        <label for="obrazok">Nazov obrazka</label>
+        <input type="text" name="obrazok" id="obrazok" value="<?= htmlspecialchars($clanok['obrazok'] ?? '') ?>" placeholder="obrazok">
+
         <label class="checkbox_riadok">
             <input type="checkbox" name="publikovany" value="1" <?= $clanok['publikovany'] ? 'checked' : '' ?>>
             Publikovat clanok

@@ -19,7 +19,7 @@ body {
 }
 
 .horna_cast {
-    background: #1c2436;
+    background: linear-gradient(90deg, #182033 0%, #24324f 50%, #1c2436 100%);
     padding: 22px 0;
 }
 
@@ -27,17 +27,52 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 20px;
 }
 
-.logo_cast h1 {
-    margin: 0;
-    font-size: 28px;
-    font-weight: bold;
+.logo_cast {
+    display: flex;
+    align-items: center;
+    flex: 0 0 auto;
 }
 
-.logo_cast h1 a {
+.logo_link {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    text-decoration: none;
+    color: white;
+}
+
+.logo_link:visited,
+.logo_link:hover,
+.logo_link:active {
     color: white;
     text-decoration: none;
+}
+
+.logo_img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    display: block;
+    border-radius: 14px;
+    flex-shrink: 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    border: 2px solid rgba(255, 255, 255, 0.25);
+}
+
+.logo_text {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1;
+    white-space: nowrap;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
 }
 
 .menu a {
@@ -85,14 +120,36 @@ body {
 }
 
 .paticka {
-    background: #1c2436;
+    background: linear-gradient(90deg, #1b2235 0%, #253657 50%, #182033 100%) !important;
     color: white;
     padding: 26px 0;
     margin-top: 30px;
+    width: 100%;
+    display: block;
+    border-top: 2px solid rgba(255, 255, 255, 0.08);
 }
 
+
+
 .paticka p {
-    margin: 0;
+    margin: 6px 0;
+}
+
+.paticka,
+.paticka * {
+    color: white;
+}
+
+.paticka a,
+.paticka a:visited,
+.paticka a:hover,
+.paticka a:active {
+    color: white !important;
+    text-decoration: none;
+}
+
+.paticka a:hover {
+    text-decoration: underline;
 }
 
 .admin_obal {
@@ -203,32 +260,28 @@ form button:hover {
     gap: 8px;
     margin-top: 15px;
 } 
-.sprava_uspech {
-    background: #dff0d8;
-    color: #2d5a27;
-}
 
-.tabulka {
+.obrazok-clanku {
     width: 100%;
-    border-collapse: collapse;
-    margin-top: 15px;
+    max-width: 450px;
+    height: auto;
+    display: block;
+    margin: 15px 0 20px auto;
+    border-radius: 12px;
+    border: 2px solid #d8d8d8;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
 }
 
-.tabulka th,
-.tabulka td {
-    border: 1px solid #ccc;
-    padding: 10px;
-    text-align: left;
-    background: white;
+.uvodny-banner {
+    width: 100%;
+    margin-bottom: 28px;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
-.tabulka th {
-    background: #efefef;
-}
-
-.checkbox_riadok {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin-top: 15px;
+.uvodny-banner img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
 }

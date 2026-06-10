@@ -15,6 +15,10 @@
             Datum: <?= date('d.m.Y', strtotime($clanok['vytvorene'])) ?>
         </p>
 
+        <?php if (!empty($clanok['obrazok'])): ?>
+            <img src="<?= WEB ?>/public/assets/img/<?= htmlspecialchars($clanok['obrazok']) ?>" alt="Obrazok clanku" class="obrazok-clanku">
+        <?php endif; ?>
+
         <?php if (!empty($clanok['perex'])): ?>
             <p><strong><?= htmlspecialchars($clanok['perex']) ?></strong></p>
         <?php endif; ?>

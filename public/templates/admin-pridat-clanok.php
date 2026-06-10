@@ -17,6 +17,9 @@
         <label for="obsah">Obsah</label>
         <textarea name="obsah" id="obsah" rows="10" required></textarea>
 
+        <label for="obrazok">Nazov obrazka</label>
+        <input type="text" name="obrazok" id="obrazok" placeholder="obrazok">
+
         <label class="checkbox_riadok">
             <input type="checkbox" name="publikovany" value="1" checked>
             Publikovat clanok

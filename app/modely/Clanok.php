@@ -59,8 +59,8 @@ class Clanok
 
     public function pridaj(array $data): bool
     {
-        $sql = "INSERT INTO clanky (pouzivatel_id, nazov, perex, obsah, publikovany)
-                VALUES (:pouzivatel_id, :nazov, :perex, :obsah, :publikovany)";
+        $sql = "INSERT INTO clanky (pouzivatel_id, nazov, perex, obsah, obrazok, publikovany)
+                VALUES (:pouzivatel_id, :nazov, :perex, :obsah, :obrazok, :publikovany)";
 
         $stmt = $this->db->prepare($sql);
 
@@ -69,6 +69,7 @@ class Clanok
             'nazov' => $data['nazov'],
             'perex' => $data['perex'],
             'obsah' => $data['obsah'],
+            'obrazok' => $data['obrazok'] ?: null,
             'publikovany' => $data['publikovany']
         ]);
     }
@@ -79,6 +80,7 @@ class Clanok
                 SET nazov = :nazov,
                     perex = :perex,
                     obsah = :obsah,
+                    obrazok = :obrazok,
                     publikovany = :publikovany
                 WHERE id = :id";
 
@@ -89,6 +91,7 @@ class Clanok
             'nazov' => $data['nazov'],
             'perex' => $data['perex'],
             'obsah' => $data['obsah'],
+            'obrazok' => $data['obrazok'] ?: null,
             'publikovany' => $data['publikovany']
         ]);
     }

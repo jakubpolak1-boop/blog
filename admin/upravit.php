@@ -24,6 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $nazov = trim($_POST['nazov'] ?? '');
     $perex = trim($_POST['perex'] ?? '');
     $obsah = trim($_POST['obsah'] ?? '');
+    $obrazok = trim($_POST['obrazok'] ?? '');
     $publikovany = isset($_POST['publikovany']) ? 1 : 0;
 
     if ($nazov === '' || $obsah === '') {
@@ -33,6 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             'nazov' => $nazov,
             'perex' => $perex,
             'obsah' => $obsah,
+            'obrazok' => $obrazok,
             'publikovany' => $publikovany
         ]);
 
