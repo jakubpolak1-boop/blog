@@ -45,4 +45,4 @@ Heslo:
 
 ## Poznámka
 
-Projekt je urobený ako jednoduchá školská práca bez frameworku.
+Projekt je urobený ako jednoduchá školská práca bez frameworku a dalších iných zbytočnosti.
