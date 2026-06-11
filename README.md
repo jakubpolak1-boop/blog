@@ -4,12 +4,13 @@ Jednoduchý blog vytvorený v PHP a MySQL.
 
 ## Čo projekt obsahuje
 
-- domovskú stránku s článkami
+- domovskú stránku spolu s článkami a obrazkami
 - detail článku
-- admin login
+- admin login stranku
 - pridanie článku
 - úpravu článku
 - zmazanie článku
+- pridanie obrazku do članku
 
 ## Použité technológie
 
@@ -45,4 +46,4 @@ Heslo:
 
 ## Poznámka
 
-Projekt je urobený ako jednoduchá školská práca bez frameworku a dalších iných zbytočnosti.
+Projekt je projektovaný ako jednoduchá školská práca bez frameworku a dalších iných zbytočnosti.
